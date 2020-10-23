@@ -1,0 +1,107 @@
+@font-face{
+    font-family: Graphik;
+    src: url('../fonts/Graphik-Font-Family/GraphikRegular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: Graphik;
+    src: url('../fonts/Graphik-Font-Family/GraphikMedium.otf');
+    font-weight: bold;
+    font-style: normal;
+}
+*{
+    font-family: Graphik;
+    color: #3D5066;
+    box-sizing: border-box;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 218px;
+}
+.navbar > h1{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 20px;
+    letter-spacing: -0.24px;
+}
+.navlink-container a{
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.24px;
+    margin-left: 50px;
+}
+.main-wrapper{
+    padding: 5em 29em;
+}
+.brief-dets{
+    text-align: center;
+}
+.brief-dets > small{
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+    letter-spacing: -0.24px;
+    color: #1452F5;
+}
+.brief-dets > h1{
+    font-size: 48px;
+    color: #1F2533;
+    margin: 20px 0;
+}
+.brief-dets > p{
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.24px;
+    color: #3D5066;
+}
+.cta-btn-container{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+.button{
+    width: 170px;
+    background: #1452F5;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    margin: 0 15px;
+    filter: drop-shadow(0px 4px 25px rgba(20, 82, 245, 0.2));
+    cursor: pointer;
+    transition: .3s;
+}
+.button > div{
+    text-align: left;
+}
+.button > div > small{
+    color: white;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: -0.24px;
+}
+.button > div > p{
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: -0.24px;
+    margin: 0;
+}
+.button:hover{
+    width: 190px;
+    background: #3D5066;
+    transition: .3s;
+}
+.shots-container{
+    display: flex;
+}
+.app-shot{
+    width: 20em;
+}
