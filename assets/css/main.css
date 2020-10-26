@@ -14,11 +14,12 @@
     font-family: Graphik;
     color: #3D5066;
     box-sizing: border-box;
+    margin: 0;
 }
 .navbar{
     display: flex;
     justify-content: space-between;
-    padding: 20px 218px;
+    padding: 35px 218px;
 }
 .navbar > h1{
     font-weight: bold;
@@ -34,7 +35,7 @@
     margin-left: 50px;
 }
 .main-wrapper{
-    padding: 5em 29em;
+    padding: 5em 30%;
 }
 .brief-dets{
     text-align: center;
@@ -76,6 +77,7 @@
     filter: drop-shadow(0px 4px 25px rgba(20, 82, 245, 0.2));
     cursor: pointer;
     transition: .3s;
+    outline: none;
 }
 .button > div{
     text-align: left;
@@ -94,7 +96,8 @@
     letter-spacing: -0.24px;
     margin: 0;
 }
-.button:hover{
+.button:hover,
+.button:focus{
     width: 190px;
     background: #3D5066;
     transition: .3s;
@@ -105,7 +108,7 @@
     padding: 20px 110px;
 }
 .app-shot{
-    width: 35%;
+    width: 28em;
 }
 #app-shot-left{
     transform: rotate(-9deg);
@@ -160,3 +163,420 @@
     color: #8294AF;
     margin: 0;
 }
+.the-why-section{
+    padding: 20px 218px;
+}
+.the-why-section > h1{
+    color: #1F2533;
+    text-align: center;
+    margin-bottom: 1.2em;
+}
+.the-why-container{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+.the-why-card{
+    width: 25%;
+    height: 205px;
+    padding: 20px;
+    flex: 0 0 auto;
+    box-shadow: 0px 0px 20px rgba(130, 148, 175, 0.11);
+    border-radius: 5px;
+    margin: 16px;
+}
+.the-why-card > h4{
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: -0.24px;
+    color: #1F2533;
+    margin: 10px 0 20px;
+}
+.the-why-card > p{
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.24px;
+    color: #8294AF;
+}
+.footer-ad-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5em 140px 0 235px;
+}
+.footer-ad-content{
+    width: 50%;
+}
+.footer-ad-content > h1{
+    font-size: 32px;
+    line-height: 30px;
+    letter-spacing: -0.24px;
+    color: #1F2533;
+    margin: 30px 0;
+}
+.footer-ad-content > p{
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.24px;
+}
+.footer-cta-btn-container{
+    margin-top: 40px;
+    display: flex;
+    width: 100%;
+}
+.footer-cta-btn-container > button{
+    margin: 0;
+    margin-right: 30px;
+}
+.footer-ad-img{
+    width: 40%;
+    text-align: right;
+}
+.footer-ad-img img{
+    width: 28em;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 235px;
+    background: #efefef;
+}
+.other-links{
+    display: flex;
+    align-items: center;
+}
+.other-links > p, .other-links>a{
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.24px;
+    color: #8294AF;
+    text-decoration: none;
+    margin: 0;
+    margin-right: 50px;
+}
+.sm-links > svg{
+    margin-left: 50px;
+    cursor: pointer;
+}
+@media only screen and (max-width: 1352px){
+    .navbar {
+        padding: 35px 170px;
+    }
+    .main-wrapper {
+        padding: 5em 23%;
+    }
+    .button:hover,
+    .button:focus{
+        width: 170px;
+        background: #3D5066;
+        transition: .3s;
+    }
+    .button > div > p {
+        font-size: 17px;
+    }
+    .app-shot {
+        width: 24em;
+    }
+    .how-it-works-section {
+        padding: 20px 170px;
+    }
+    .the-why-section {
+        padding: 20px 170px;
+    }
+    .footer-ad-section {
+        padding: 2.5em 100px 0 200px;
+    }
+    .footer-ad-img img {
+        width: 24em;
+    }
+    footer {
+        padding: 35px 200px;
+    }
+}
+@media only screen and (max-width: 1163px){
+    .navbar {
+        padding: 35px 150px;
+    }
+    .button{
+        margin: 10px;
+    }
+    .button > div > p {
+        font-size: 16px;
+    }
+    .app-shot {
+        width: 20em;
+    }
+    .how-it-works-section {
+        padding: 20px 150px;
+    }
+    .the-why-section {
+        padding: 20px 150px;
+    }
+    .the-why-card {
+        width: 30%;
+    }
+    .footer-ad-section {
+        padding: 2.5em 85px 0 170px;
+    }
+    .footer-cta-btn-container > button {
+        margin-right: 20px;
+    }
+    .footer-ad-img img {
+        width: 20em;
+    }
+    footer {
+        padding: 35px 170px;
+    }
+}
+
+@media only screen and (max-width: 980px){
+    .navbar {
+        padding: 35px 110px;
+    }
+    .main-wrapper {
+        padding: 5em 20%;
+    }
+    .app-shot {
+        width: 29em;
+    }
+    #app-shot-right,
+    #app-shot-left {
+        display: none;
+    }
+    .how-it-works-section {
+        padding: 20px 110px;
+    }
+    .the-why-section {
+        padding: 20px 110px;
+    }
+    .the-why-card {
+        width: 37%;
+    }
+    .footer-ad-section {
+        padding: 5em 20%;
+    }
+    .footer-ad-content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .footer-cta-btn-container {
+        justify-content: center;
+    }
+    .footer-cta-btn-container > button {
+        margin: 10px;
+    }
+    .footer-ad-img {
+        display: none;
+    }
+    footer {
+        padding: 35px 110px;
+    }
+}
+
+@media only screen and (max-width: 855px){
+    .navbar {
+        padding: 35px 95px;
+    }
+    .main-wrapper {
+        padding: 5em 15%;
+    }
+    .app-shot {
+        width: 29em;
+    }
+    .how-it-works-section {
+        padding: 20px 95px;
+    }
+    .the-why-section {
+        padding: 20px 95px;
+    }
+    .the-why-card {
+        width: 37%;
+    }
+    .footer-ad-section {
+        padding: 5em 15%;
+    }
+    footer {
+        padding: 35px 75px;
+    }
+    .other-links > p, .other-links>a {
+        margin-right: 30px;
+    }
+    .sm-links > svg {
+        margin-left: 30px;
+    }
+}
+
+@media only screen and (max-width: 710px){
+    .how-it-works-section > h1{
+        text-align: center;
+    }
+    .detail {
+        width: 100%;
+    }
+    .the-why-card {
+        width: 45%;
+    }
+    footer {
+        align-items: flex-end;
+    }
+    .other-links{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .other-links > p, .other-links>a {
+        margin-bottom: 15px;
+    }
+    .sm-links > svg {
+        margin-bottom: 15px;
+    }
+}
+
+@media only screen and (max-width: 645px){
+    .navbar {
+        padding: 35px 60px;
+    }
+    .main-wrapper {
+        padding: 5em 8%;
+    }
+    .how-it-works-section {
+        padding: 20px 60px;
+    }
+    .the-why-section {
+        padding: 20px 60px;
+    }
+    .the-why-card {
+        width: 60%;
+    }
+    .footer-ad-section {
+        padding: 5em 8%;
+    }
+    footer {
+        padding: 35px 75px;
+    }
+}
+
+@media only screen and (max-width: 490px){
+    .navbar {
+        padding: 35px 45px;
+    }
+    .main-wrapper {
+        padding: 5em 8% 2em;
+    }
+    .app-shot {
+        width: 25em;
+    }
+    .how-it-works-section {
+        padding: 20px 45px;
+    }
+    .the-why-section {
+        padding: 20px 45px;
+    }
+    .the-why-card {
+        width: 70%;
+    }
+    .footer-ad-section {
+        padding: 5em 8%;
+    }
+    footer {
+        padding: 35px 75px;
+    }
+}
+
+@media only screen and (max-width: 455px){
+    .navbar > h1,
+    .navlink-container a,
+    .brief-dets > small,
+    .brief-dets > p,
+    .detail > div > p,
+    .detail > div > h4,
+    .the-why-card > p,
+    .footer-ad-content > p,
+    .other-links > p, .other-links>a {
+        font-size: 12px;
+    }
+
+    .brief-dets > h1{
+        font-size: 42px;
+    }
+
+    .how-it-works-section > h1,
+    .the-why-section > h1,
+    .footer-ad-content > h1{
+        font-size: 24px;
+    }
+
+    .button {
+        width: 145px;
+        padding: 10px;
+    }
+    .button:hover,
+    .button:focus{
+        width: 145px;
+        background: #3D5066;
+        transition: .3s;
+    }
+    
+
+    footer {
+        padding: 35px 30px;
+    }
+}
+
+@media only screen and (max-width: 420px){
+    .navbar {
+        padding: 35px 30px;
+    }
+    .navlink-container a{
+        margin-left: 20px;
+    }
+    .main-wrapper {
+        padding: 3em 3% 1.5em;
+    }
+    .app-shot {
+        width: 20em;
+    }
+    .how-it-works-section {
+        padding: 20px 30px;
+    }
+    .the-why-section {
+        padding: 20px 30px;
+    }
+    .footer-ad-section {
+        padding: 5em 3%;
+    }
+    footer {
+        padding: 35px 25px;
+    }
+}
+
+@media only screen and (max-width: 350px){
+    .button {
+        padding: 8px;
+    }
+    .button > div > small {
+        font-size: 10px;
+    }
+
+    .navbar {
+        padding: 35px 20px;
+    }
+    .app-shot {
+        width: 19em;
+    }
+    .how-it-works-section {
+        padding: 20px;
+    }
+    .the-why-section {
+        padding: 20px;
+    }
+    .the-why-card {
+        width: 80%;
+    }
+    footer {
+        padding: 35px 20px;
+    }
+} 
