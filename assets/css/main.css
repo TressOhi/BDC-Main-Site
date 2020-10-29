@@ -68,13 +68,11 @@ body{
 @keyframes btnEntry{
     from{
         margin-bottom: -300px;
-        width: 190px;
         background: #3D5066;
         opacity: 0;
     }
     to{
         margin-bottom: 0;
-        width: 170px;
         background: #1452F5;
         opacity: 1;
     }
