@@ -7,8 +7,9 @@
         <title>BUREAU DE COIN</title>
         <link rel="stylesheet" href="./assets/css/main.css">
         <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <script src="./assets/js/main.js"></script>
     </head>
-    <body>
+    <body onload="sett()">
         <div>
             <div class="navbar">
                 <h1>LOGO</h1>
@@ -91,37 +92,39 @@
         <div class="the-why-section">
             <h1>Why use BUREAU DE COIN</h1>
             <div class="the-why-container">
-                <div>
-                    
+                <div onclick="swipeLeft()" class="arrow-container left-arrow-container">
+                    <a>&#8592;</a>
                 </div>
 
-                <div class="the-why-card">
-                    <h4>Strong Security</h4>
-                    <p>Bureau de coin provides is simply dummy text of the printing and typesetting s</p>
-                </div>
-                <div class="the-why-card">
-                        <h4>Strong Security</h4>
-                    <p>Bureau de coin provides is simply dummy text of the printing and typesetting s</p>
-                </div>
-                <div class="the-why-card">
+                <div class="the-why-cards-container">
+                    <div class="the-why-card">
                         <h4>Strong Security</h4>
                         <p>Bureau de coin provides is simply dummy text of the printing and typesetting s</p>
                     </div>
-                <div class="the-why-card">
-                    <h4>Strong Security</h4>
-                    <p>Bureau de coin provides is simply dummy text of the printing and typesetting s</p>
-                </div>
-                <div class="the-why-card">
-                    <h4>Strong Security</h4>
-                    <p>Bureau de coin provides is simply dummy text of the printing and typesetting s</p>
-                </div>
-                <div class="the-why-card">
-                    <h4>Strong Security</h4>
-                    <p>Bureau de coin provides is simply dummy text of the printing and typesetting s</p>
+                    <div class="the-why-card">
+                            <h4>Strong Security</h4>
+                        <p>Bureau de coin provides is simply dummy text of the printing and typesetting s</p>
+                    </div>
+                    <div class="the-why-card">
+                            <h4>Strong Security</h4>
+                            <p>Bureau de coin provides is simply dummy text of the printing and typesetting s</p>
+                        </div>
+                    <div class="the-why-card">
+                        <h4>Strong Security</h4>
+                        <p>Bureau de coin provides is simply dummy text of the printing and typesetting s</p>
+                    </div>
+                    <div class="the-why-card">
+                        <h4>Strong Security</h4>
+                        <p>Bureau de coin provides is simply dummy text of the printing and typesetting s</p>
+                    </div>
+                    <div class="the-why-card">
+                        <h4>Strong Security</h4>
+                        <p>Bureau de coin provides is simply dummy text of the printing and typesetting s</p>
+                    </div>
                 </div>
 
-                <div>
-                    
+                <div onclick="swipeRight()" class="arrow-container right-arrow-container">
+                    <a>&#8594;</a>
                 </div>
             </div>
         </div>
