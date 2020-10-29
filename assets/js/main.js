@@ -1,5 +1,10 @@
 function sett(){
-    localStorage.scroll=0
+    setTimeout(showBody, 3000)
+}
+
+function showBody(){
+    document.getElementsByClassName('loader')[0].style.display="none"
+    document.getElementsByClassName('main')[0].style.display="block"
 }
 
 function swipeLeft(){
