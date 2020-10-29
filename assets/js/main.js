@@ -44,3 +44,24 @@ function swipeRight(){
         document.getElementsByClassName('right-arrow-container')[0].style.display="none"
     }
 }
+
+function setControl(){
+    var card = document.getElementsByClassName('the-why-card');
+    var cardWidth = window.getComputedStyle(card[0]).getPropertyValue('width')
+    var container = document.getElementsByClassName('the-why-cards-container')[0]
+    var diff = container.scrollWidth - container.clientWidth
+    cardWidth = parseInt(cardWidth) + 32
+
+    if(container.scrollLeft < cardWidth){
+        document.getElementsByClassName('left-arrow-container')[0].style.display="none"
+    }
+    else{
+        document.getElementsByClassName('left-arrow-container')[0].style.display="block"
+    }
+    if(container.scrollLeft + cardWidth >= diff){
+        document.getElementsByClassName('right-arrow-container')[0].style.display="none"
+    }
+    else{
+        document.getElementsByClassName('right-arrow-container')[0].style.display="block"
+    }
+}
