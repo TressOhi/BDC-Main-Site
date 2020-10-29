@@ -16,6 +16,9 @@
     box-sizing: border-box;
     margin: 0;
 }
+html{
+    scroll-behavior: smooth;
+}
 .navbar{
     display: flex;
     justify-content: space-between;
@@ -172,9 +175,40 @@
     margin-bottom: 1.2em;
 }
 .the-why-container{
+    position: relative;
+}
+.the-why-cards-container{
     display: flex;
     flex-wrap: nowrap;
-    overflow: hidden;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+}
+.the-why-cards-container::-webkit-scrollbar{
+    display: none;
+}
+.arrow-container{
+    position: absolute;
+    top: 6em;
+    background-color: white;
+    padding: 12px;
+    border-radius: 100%;
+    filter: drop-shadow(0px 0px 25px rgba(20, 82, 245, 0.1));
+    cursor: pointer;
+    display: none;
+}
+.arrow-container a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    color: #1452F5;
+}
+.left-arrow-container{
+    left: -11px;
+}
+.right-arrow-container{
+    right: -20px;
+    display: block;
 }
 .the-why-card{
     width: 25%;
@@ -184,6 +218,7 @@
     box-shadow: 0px 0px 20px rgba(130, 148, 175, 0.11);
     border-radius: 5px;
     margin: 16px;
+    scroll-snap-align: center;
 }
 .the-why-card > h4{
     font-size: 18px;
