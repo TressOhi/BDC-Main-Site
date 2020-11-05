@@ -52,7 +52,7 @@ function setControl(){
     var diff = container.scrollWidth - container.clientWidth
     cardWidth = parseInt(cardWidth)
     
-    if(container.scrollLeft < cardWidth){
+    if(container.scrollLeft < cardWidth/2){
         document.getElementsByClassName('left-arrow-container')[0].style.display="none"
     }
     else{
