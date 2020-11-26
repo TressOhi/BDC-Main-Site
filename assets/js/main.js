@@ -3,7 +3,7 @@ function sett(){
 }
 
 function showBody(){
-    document.getElementsByClassName('loader')[0].style.display="none"
+    document.getElementsByClassName('loader-container')[0].style.display="none"
     document.getElementsByClassName('main')[0].style.display="block"
 }
 
@@ -52,7 +52,7 @@ function setControl(){
     var diff = container.scrollWidth - container.clientWidth
     cardWidth = parseInt(cardWidth)
     
-    if(container.scrollLeft < cardWidth/2){
+    if(container.scrollLeft < 10){
         document.getElementsByClassName('left-arrow-container')[0].style.display="none"
     }
     else{
