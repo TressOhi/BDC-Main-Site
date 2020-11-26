@@ -25,6 +25,17 @@ body{
     flex-direction: column;
     min-height: 100vh;
 }
+.loader-container{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow: hidden;
+}
+p{
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.24px;
+}
 .loader{
     padding: 3em;
     width: 6em;
@@ -131,9 +142,6 @@ body{
     animation-duration: 3s;
 }
 .brief-dets > p{
-    font-size: 14px;
-    line-height: 20px;
-    letter-spacing: -0.24px;
     color: #3D5066;
     animation: bottomEntry;
     animation-duration: 1s;
@@ -178,8 +186,6 @@ body{
     color: white;
     font-weight: 500;
     font-size: 18px;
-    line-height: 20px;
-    letter-spacing: -0.24px;
     margin: 0;
 }
 .button:hover,
@@ -195,6 +201,7 @@ body{
 }
 .app-shot{
     width: 28em;
+    height: auto;
     animation: imgEntry;
     animation-duration: 3s;
 }
@@ -245,9 +252,6 @@ body{
     margin: 10px 0;
 }
 .detail > div > p{
-    font-size: 14px;
-    line-height: 20px;
-    letter-spacing: -0.24px;
     color: #8294AF;
     margin: 0;
 }
@@ -313,9 +317,6 @@ body{
     margin: 10px 0 20px;
 }
 .the-why-card > p{
-    font-size: 14px;
-    line-height: 20px;
-    letter-spacing: -0.24px;
     color: #8294AF;
 }
 .footer-ad-section{
@@ -333,11 +334,6 @@ body{
     letter-spacing: -0.24px;
     color: #1F2533;
     margin: 30px 0;
-}
-.footer-ad-content > p{
-    font-size: 14px;
-    line-height: 20px;
-    letter-spacing: -0.24px;
 }
 .footer-cta-btn-container{
     margin-top: 40px;
@@ -559,6 +555,9 @@ footer{
     .navbar {
         padding: 35px 60px;
     }
+    .navbar > h1{
+        font-size: 12px;
+    }
     .main-wrapper {
         padding: 5em 8%;
     }
@@ -610,12 +609,9 @@ footer{
     .navbar > h1,
     .navlink-container a,
     .brief-dets > small,
-    .brief-dets > p,
-    .detail > div > p,
-    .detail > div > h4,
-    .the-why-card > p,
-    .footer-ad-content > p,
-    .other-links > p, .other-links>a {
+    .detail > div > h4, 
+    .other-links>a, 
+    p{
         font-size: 12px;
     }
 
@@ -654,7 +650,7 @@ footer{
         margin-left: 20px;
     }
     .main-wrapper {
-        padding: 3em 3% 1.5em;
+        padding: 3em 10px 1.5em;
     }
     .app-shot {
         width: 20em;
@@ -666,7 +662,7 @@ footer{
         padding: 20px 30px;
     }
     .footer-ad-section {
-        padding: 5em 3%;
+        padding: 5em 10px;
     }
     footer {
         padding: 35px 25px;
