@@ -650,7 +650,7 @@ footer{
         margin-left: 20px;
     }
     .main-wrapper {
-        padding: 3em 10px 1.5em;
+        padding: 3em 17px 1.5em;
     }
     .app-shot {
         width: 20em;
@@ -662,7 +662,7 @@ footer{
         padding: 20px 30px;
     }
     .footer-ad-section {
-        padding: 5em 10px;
+        padding: 5em 17px;
     }
     footer {
         padding: 35px 25px;
@@ -670,8 +670,13 @@ footer{
 }
 
 @media only screen and (max-width: 350px){
+    .cta-btn-container{
+        justify-content: space-around;
+    }
     .button {
         padding: 8px;
+        width: 135px;
+        margin: 10px 0;
     }
     .button > div > small {
         font-size: 10px;
@@ -694,5 +699,11 @@ footer{
     }
     footer {
         padding: 35px 20px;
+    }
+    .footer-cta-btn-container {
+        justify-content: space-around;
+    }
+    .footer-cta-btn-container > button {
+        margin: 10px 0;
     }
 } 
